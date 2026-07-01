@@ -313,8 +313,8 @@ export function Index() {
                       <Phone className="h-5 w-5 text-gold" />
                     </div>
                     <div>
-                      <p className="text-sm text-cream/60">Teléfono</p>
-                      <p className="font-medium">+54 9 261 655-0577</p>
+                      <p className="text-sm text-cream/60">Teléfono fijo</p>
+                      <p className="font-medium">261-4295645</p>
                     </div>
                   </div>
                   <a
