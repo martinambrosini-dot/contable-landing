@@ -341,6 +341,20 @@ export function Index() {
                     </div>
                   </div>
                 </div>
+
+                <div className="mt-8 overflow-hidden rounded-2xl border border-cream/20 shadow-lg">
+                  <iframe
+                    title="Ubicación del Estudio Ambrosini"
+                    src="https://www.google.com/maps?q=Estudio+Ambrosini,+Rioja+791,+Mendoza&z=17&output=embed"
+                    width="100%"
+                    height="260"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="block w-full"
+                  />
+                </div>
               </div>
 
               <div className="rounded-2xl bg-cream p-6 shadow-xl sm:p-8">
