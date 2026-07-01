@@ -24,9 +24,9 @@ export const Route = createFileRoute("/")({
 });
 
 const navLinks = [
-  { label: "Servicios", href: "#servicios" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Nosotros", href: "/nosotros" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 const services = [
