@@ -13,6 +13,7 @@ import {
   MapPin,
   Menu,
   X,
+  MessageCircle,
 } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-accounting.jpg";
@@ -293,31 +294,50 @@ export function Index() {
                 </p>
 
                 <div className="mt-8 space-y-4">
+                  <a
+                    href="https://wa.me/542616550577"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 text-cream/90 transition-colors hover:text-cream"
+                  >
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10">
+                      <MessageCircle className="h-5 w-5 text-gold" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-cream/60">WhatsApp</p>
+                      <p className="font-medium">+54 9 261 655-0577</p>
+                    </div>
+                  </a>
                   <div className="flex items-center gap-4 text-cream/90">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10">
                       <Phone className="h-5 w-5 text-gold" />
                     </div>
                     <div>
                       <p className="text-sm text-cream/60">Teléfono</p>
-                      <p className="font-medium">+54 11 1234-5678</p>
+                      <p className="font-medium">+54 9 261 655-0577</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 text-cream/90">
+                  <a
+                    href="mailto:martin@estudioambrosini.net"
+                    className="flex items-center gap-4 text-cream/90 transition-colors hover:text-cream"
+                  >
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10">
                       <Mail className="h-5 w-5 text-gold" />
                     </div>
                     <div>
                       <p className="text-sm text-cream/60">Email</p>
-                      <p className="font-medium">contacto@estudiocontable.com</p>
+                      <p className="font-medium">martin@estudioambrosini.net</p>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-4 text-cream/90">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10">
+                  </a>
+                  <div className="flex items-start gap-4 text-cream/90">
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cream/10">
                       <MapPin className="h-5 w-5 text-gold" />
                     </div>
                     <div>
                       <p className="text-sm text-cream/60">Dirección</p>
-                      <p className="font-medium">Av. Corrientes 1234, CABA</p>
+                      <p className="font-medium">
+                        Rioja 791, 1º piso — Oficinas 2 y 3, Ciudad, Mendoza
+                      </p>
                     </div>
                   </div>
                 </div>
