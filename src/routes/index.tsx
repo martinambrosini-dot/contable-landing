@@ -341,6 +341,20 @@ export function Index() {
                     </div>
                   </div>
                 </div>
+
+                <div className="mt-8 overflow-hidden rounded-2xl border border-cream/20 shadow-lg">
+                  <iframe
+                    title="Ubicación del Estudio Ambrosini"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17.04!2d-68.8360198!3d-32.894339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1"
+                    width="100%"
+                    height="260"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="block w-full"
+                  />
+                </div>
               </div>
 
               <div className="rounded-2xl bg-cream p-6 shadow-xl sm:p-8">
