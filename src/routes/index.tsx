@@ -77,8 +77,11 @@ export function Index() {
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <a href="/" className="flex items-center gap-2">
-            <span className="font-heading text-2xl font-semibold text-emerald-dark">
-              Estudio<span className="text-gold">.</span>
+            <span className="font-heading text-xl font-semibold leading-none text-emerald-dark">
+              Estudio Ambrosini<span className="text-gold">.</span>
+              <span className="block text-xs font-medium tracking-wide text-emerald-dark/80">
+                Contadores Públicos
+              </span>
             </span>
           </a>
 
@@ -244,7 +247,7 @@ export function Index() {
                     números en decisiones claras para tu negocio.”
                   </blockquote>
                   <p className="mt-6 text-sm font-medium opacity-80">
-                    — Estudio Contable
+                    — Estudio Ambrosini. Contadores Públicos.
                   </p>
                 </div>
               </div>
@@ -436,8 +439,11 @@ export function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
-          <span className="font-heading text-2xl font-semibold text-emerald-dark">
-            Estudio<span className="text-gold">.</span>
+          <span className="font-heading text-xl font-semibold leading-none text-emerald-dark">
+            Estudio Ambrosini<span className="text-gold">.</span>
+            <span className="block text-xs font-medium tracking-wide text-emerald-dark/80">
+              Contadores Públicos
+            </span>
           </span>
           <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
             {navLinks.map((link) => (
@@ -451,7 +457,7 @@ export function Index() {
             ))}
           </nav>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Estudio Contable. Todos los derechos reservados.
+            © {new Date().getFullYear()} Estudio Ambrosini. Contadores Públicos. Todos los derechos reservados.
           </p>
         </div>
       </footer>
