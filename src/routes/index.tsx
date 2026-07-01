@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-accounting.jpg";
+import logoAsset from "@/assets/ea-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -76,13 +77,14 @@ export function Index() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a href="/" className="flex items-center gap-2">
-            <span className="font-heading text-xl font-semibold leading-none text-emerald-dark">
-              Estudio Ambrosini<span className="text-gold">.</span>
-              <span className="block text-xs font-medium tracking-wide text-emerald-dark/80">
-                Contadores Públicos
-              </span>
-            </span>
+          <a href="/" className="flex items-center" aria-label="Estudio Ambrosini - Contadores Públicos">
+            <img
+              src={logoAsset.url}
+              alt="Estudio Ambrosini. Contadores Públicos."
+              className="h-10 w-auto sm:h-12"
+              width={1000}
+              height={520}
+            />
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
