@@ -47,9 +47,14 @@ const team = [
     bio: "Se incorporó al estudio en 2011. Continúa la tradición familiar con foco en planificación fiscal, impuestos y acompañamiento integral a pymes.",
   },
   {
-    name: "Eliana Weinstein",
+    name: "Eli Angelili",
     role: "Contadora — Área Sueldos",
     bio: "Parte del equipo desde 2008. Responsable de la liquidación de sueldos y jornales, y de la gestión laboral y previsional de nuestros clientes.",
+  },
+  {
+    name: "Eliana Weinstein",
+    role: "Contadora — Área Sueldos",
+    bio: "Se incorporó al estudio en 2025 para reforzar el área de liquidación de sueldos y acompañar el crecimiento del equipo.",
   },
   {
     name: "Leandro Escudero",
@@ -182,7 +187,7 @@ function SobreNosotros() {
               </p>
               <p>
                 En <strong className="text-emerald-dark">2008</strong> se incorporó{" "}
-                <strong className="text-emerald-dark">Eliana Weinstein</strong> al área de
+                <strong className="text-emerald-dark">Eli Angelili</strong> al área de
                 liquidación de sueldos, permitiendo ofrecer a los clientes un
                 servicio laboral completo y especializado.
               </p>
@@ -192,6 +197,12 @@ function SobreNosotros() {
                 contador público, dando continuidad a la mirada profesional del
                 estudio y ampliando los servicios de asesoramiento impositivo y
                 contable.
+              </p>
+              <p>
+                En <strong className="text-emerald-dark">2025</strong> se incorporó{" "}
+                <strong className="text-emerald-dark">Eliana Weinstein</strong> al área de
+                sueldos, reforzando el equipo y acompañando el crecimiento del
+                estudio.
               </p>
               <p>
                 Hoy, más de tres décadas después, seguimos creciendo con el
