@@ -53,8 +53,8 @@ const team = [
   },
   {
     name: "Eliana Weinstein",
-    role: "Contadora — Área Sueldos",
-    bio: "Se incorporó al estudio en 2025 para reforzar el área de liquidación de sueldos y acompañar el crecimiento del equipo.",
+    role: "Contadora — Área Impositiva y Contable",
+    bio: "Se incorporó al estudio en 2025 para reforzar el área impositiva y contable, acompañando el crecimiento del equipo.",
   },
   {
     name: "Leandro Escudero",
@@ -200,9 +200,9 @@ function SobreNosotros() {
               </p>
               <p>
                 En <strong className="text-emerald-dark">2025</strong> se incorporó{" "}
-                <strong className="text-emerald-dark">Eliana Weinstein</strong> al área de
-                sueldos, reforzando el equipo y acompañando el crecimiento del
-                estudio.
+                <strong className="text-emerald-dark">Eliana Weinstein</strong> al área
+                impositiva y contable, reforzando el equipo y acompañando el
+                crecimiento del estudio.
               </p>
               <p>
                 Hoy, más de tres décadas después, seguimos creciendo con el
