@@ -58,8 +58,8 @@ const team = [
   },
   {
     name: "Leandro Escudero",
-    role: "Contador Público",
-    bio: "Integra el área contable e impositiva del estudio, con dedicación al análisis, la registración y las declaraciones juradas de cada cliente.",
+    role: "Contador Público — Impuestos y Contabilidad",
+    bio: "Se incorporó al estudio en 2023 como especialista en impuestos y contabilidad, aportando una mirada joven, analítica y actualizada a cada cliente.",
   },
 ];
 
@@ -197,6 +197,13 @@ function SobreNosotros() {
                 contador público, dando continuidad a la mirada profesional del
                 estudio y ampliando los servicios de asesoramiento impositivo y
                 contable.
+              </p>
+              <p>
+                En <strong className="text-emerald-dark">2023</strong> se incorporó{" "}
+                <strong className="text-emerald-dark">Leandro Escudero</strong>, contador
+                público especialista en impuestos y contabilidad, aportando una
+                mirada joven y analítica que fortaleció el área técnica del
+                estudio.
               </p>
               <p>
                 En <strong className="text-emerald-dark">2025</strong> se incorporó{" "}
