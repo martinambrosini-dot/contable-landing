@@ -199,6 +199,13 @@ function SobreNosotros() {
                 contable.
               </p>
               <p>
+                En <strong className="text-emerald-dark">2023</strong> se incorporó{" "}
+                <strong className="text-emerald-dark">Leandro Escudero</strong>, contador
+                público especialista en impuestos y contabilidad, aportando una
+                mirada joven y analítica que fortaleció el área técnica del
+                estudio.
+              </p>
+              <p>
                 En <strong className="text-emerald-dark">2025</strong> se incorporó{" "}
                 <strong className="text-emerald-dark">Eliana Weinstein</strong> al área
                 impositiva y contable, reforzando el equipo y acompañando el
