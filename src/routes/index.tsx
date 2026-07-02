@@ -147,7 +147,7 @@ export function Index() {
                 Estudio contable integral
               </span>
               <h1 className="heading-xl text-balance text-emerald-dark">
-                Tu tranquilidad financiera empieza aquí.
+                Tu tranquilidad impositiva empieza aquí.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
                 Brindamos soluciones contables, impositivas y laborales para
