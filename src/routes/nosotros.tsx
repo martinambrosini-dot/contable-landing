@@ -330,7 +330,7 @@ function SobreNosotros() {
               Escribinos y coordinemos una primera charla sin compromiso.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button size="lg" asChild className="bg-gold text-emerald-dark hover:bg-gold/90">
+              <Button size="lg" asChild className="bg-gold font-heading text-emerald-dark hover:bg-gold/90">
                 <Link to="/" hash="contacto">
                   Ir a contacto
                   <ArrowRight className="ml-2 h-4 w-4" />
