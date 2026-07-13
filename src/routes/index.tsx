@@ -222,10 +222,8 @@ export function Index() {
         <section id="servicios" className="bg-cream-deep/50 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
-                Servicios
-              </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <span className="eyebrow text-emerald">Servicios</span>
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Todo lo que tu negocio necesita en un solo lugar.
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -234,7 +232,7 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((service) => (
                 <div
                   key={service.title}
@@ -251,7 +249,7 @@ export function Index() {
                   </p>
                   <a
                     href="#contacto"
-                    className="mt-5 inline-flex items-center text-sm font-medium text-emerald transition-colors group-hover:text-emerald-dark"
+                    className="mt-5 inline-flex items-center text-sm font-bold text-emerald transition-colors group-hover:text-emerald-dark"
                   >
                     Consultar
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
