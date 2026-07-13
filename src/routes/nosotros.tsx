@@ -145,7 +145,7 @@ function SobreNosotros() {
         {/* Hero */}
         <section className="px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-sm font-medium text-emerald-dark">
+            <span className="eyebrow inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-emerald-dark">
               Sobre Nosotros
             </span>
             <h1 className="heading-xl mt-4 text-balance text-emerald-dark">
