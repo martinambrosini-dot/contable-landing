@@ -81,9 +81,9 @@ export function Index() {
             <img
               src={logoAsset.url}
               alt="Estudio Ambrosini. Contadores Públicos."
-              className="h-10 w-auto sm:h-12"
+              className="h-12 w-auto sm:h-14"
               width={1000}
-              height={520}
+              height={530}
             />
           </a>
 
