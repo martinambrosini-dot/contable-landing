@@ -127,7 +127,7 @@ function SobreNosotros() {
             <img
               src={logoAsset.url}
               alt="Estudio Ambrosini. Contadores Públicos."
-              className="h-12 w-auto sm:h-14"
+              className="h-14 w-auto sm:h-16"
               width={1000}
               height={530}
             />
