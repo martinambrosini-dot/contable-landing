@@ -2,8 +2,8 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import "@fontsource-variable/lora";
-@import "@fontsource/nunito-sans";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/dm-sans";
 
 @custom-variant dark (&:is(.dark *));
 
