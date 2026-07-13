@@ -340,7 +340,7 @@ function SobreNosotros() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-cream/40 bg-transparent text-cream hover:bg-cream/10 hover:text-cream"
+                className="border-cream/40 bg-transparent font-heading text-cream hover:bg-cream/10 hover:text-cream"
               >
                 <Link to="/">Volver al inicio</Link>
               </Button>
