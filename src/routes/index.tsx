@@ -307,10 +307,8 @@ export function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
-                <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-                  Contacto
-                </span>
-                <h2 className="heading-lg mt-2 text-balance text-cream">
+                <span className="eyebrow text-gold">Contacto</span>
+                <h2 className="heading-lg mt-3 text-balance text-cream">
                   Hablemos de tu situación contable.
                 </h2>
                 <p className="mt-4 text-lg text-cream/80">
