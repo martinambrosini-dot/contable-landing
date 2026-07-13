@@ -145,7 +145,7 @@ function SobreNosotros() {
         {/* Hero */}
         <section className="px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-sm font-medium text-emerald-dark">
+            <span className="eyebrow inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-emerald-dark">
               Sobre Nosotros
             </span>
             <h1 className="heading-xl mt-4 text-balance text-emerald-dark">
@@ -163,10 +163,10 @@ function SobreNosotros() {
         <section className="bg-cream-deep/50 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-5">
             <div className="lg:col-span-2">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
+              <span className="eyebrow text-emerald">
                 Nuestra Historia
               </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Desde 1992 al servicio de nuestros clientes.
               </h2>
             </div>
@@ -224,10 +224,10 @@ function SobreNosotros() {
         <section className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
+              <span className="eyebrow text-emerald">
                 Nuestro Equipo
               </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Profesionales que hacen la diferencia.
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -266,10 +266,10 @@ function SobreNosotros() {
         <section className="bg-cream-deep/50 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
+              <span className="eyebrow text-emerald">
                 Nuestros Valores
               </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Los principios que guían nuestro trabajo.
               </h2>
             </div>
@@ -295,10 +295,10 @@ function SobreNosotros() {
         <section className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
+              <span className="eyebrow text-emerald">
                 Certificaciones y Formación
               </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Respaldo profesional y actualización continua.
               </h2>
             </div>
@@ -330,7 +330,7 @@ function SobreNosotros() {
               Escribinos y coordinemos una primera charla sin compromiso.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button size="lg" asChild className="bg-gold text-emerald-dark hover:bg-gold/90">
+              <Button size="lg" asChild className="bg-gold font-heading text-emerald-dark hover:bg-gold/90">
                 <Link to="/" hash="contacto">
                   Ir a contacto
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -340,7 +340,7 @@ function SobreNosotros() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-cream/40 bg-transparent text-cream hover:bg-cream/10 hover:text-cream"
+                className="border-cream/40 bg-transparent font-heading text-cream hover:bg-cream/10 hover:text-cream"
               >
                 <Link to="/">Volver al inicio</Link>
               </Button>

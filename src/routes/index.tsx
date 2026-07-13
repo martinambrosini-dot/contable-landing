@@ -143,7 +143,7 @@ export function Index() {
         <section className="relative overflow-hidden px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
           <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col items-start text-left">
-              <span className="mb-4 inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-sm font-medium text-emerald-dark">
+              <span className="eyebrow mb-4 inline-flex items-center rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-emerald-dark">
                 Estudio contable integral
               </span>
               <h1 className="heading-xl text-balance text-emerald-dark">
@@ -158,7 +158,7 @@ export function Index() {
                 <Button
                   size="lg"
                   asChild
-                  className="bg-emerald text-primary-foreground hover:bg-emerald-dark"
+                  className="bg-emerald font-heading text-primary-foreground hover:bg-emerald-dark"
                 >
                   <a href="#contacto">
                     Hablar con un contador
@@ -169,12 +169,12 @@ export function Index() {
                   size="lg"
                   variant="outline"
                   asChild
-                  className="border-emerald-dark/20 text-emerald-dark hover:bg-emerald-dark/5"
+                  className="border-emerald-dark/20 font-heading text-emerald-dark hover:bg-emerald-dark/5"
                 >
                   <a href="#servicios">Ver servicios</a>
                 </Button>
               </div>
-              <div className="mt-10 flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="mt-10 flex items-center gap-2 text-sm font-medium text-muted-foreground">
                 <CheckCircle2 className="h-4 w-4 text-gold" />
                 <span>Consulta inicial sin compromiso</span>
               </div>
@@ -192,16 +192,38 @@ export function Index() {
               />
             </div>
           </div>
+
+          {/* Hero grid highlights */}
+          <div className="mx-auto mt-16 grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-xl border border-border bg-card/80 p-5 backdrop-blur-sm">
+              <p className="eyebrow text-emerald">Desde</p>
+              <p className="mt-1 font-heading text-3xl font-semibold tracking-tight text-emerald-dark">1992</p>
+              <p className="mt-1 text-sm text-muted-foreground">Acompañando empresas y familias de Mendoza.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card/80 p-5 backdrop-blur-sm">
+              <p className="eyebrow text-emerald">Equipo</p>
+              <p className="mt-1 font-heading text-3xl font-semibold tracking-tight text-emerald-dark">5 profesionales</p>
+              <p className="mt-1 text-sm text-muted-foreground">Contadores públicos matriculados y especialistas.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card/80 p-5 backdrop-blur-sm">
+              <p className="eyebrow text-emerald">Atención</p>
+              <p className="mt-1 font-heading text-3xl font-semibold tracking-tight text-emerald-dark">Personalizada</p>
+              <p className="mt-1 text-sm text-muted-foreground">Trato cercano y respuesta ágil para cada cliente.</p>
+            </div>
+            <div className="rounded-xl border border-border bg-card/80 p-5 backdrop-blur-sm">
+              <p className="eyebrow text-emerald">Especialización</p>
+              <p className="mt-1 font-heading text-3xl font-semibold tracking-tight text-emerald-dark">+30 años</p>
+              <p className="mt-1 text-sm text-muted-foreground">De experiencia en impuestos, contabilidad y laboral.</p>
+            </div>
+          </div>
         </section>
 
         {/* Services */}
         <section id="servicios" className="bg-cream-deep/50 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
-                Servicios
-              </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <span className="eyebrow text-emerald">Servicios</span>
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Todo lo que tu negocio necesita en un solo lugar.
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -210,7 +232,7 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((service) => (
                 <div
                   key={service.title}
@@ -227,7 +249,7 @@ export function Index() {
                   </p>
                   <a
                     href="#contacto"
-                    className="mt-5 inline-flex items-center text-sm font-medium text-emerald transition-colors group-hover:text-emerald-dark"
+                    className="mt-5 inline-flex items-center text-sm font-bold text-emerald transition-colors group-hover:text-emerald-dark"
                   >
                     Consultar
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -255,10 +277,8 @@ export function Index() {
               </div>
 
               <div className="order-1 lg:order-2">
-                <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
-                  Nosotros
-                </span>
-                <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+                <span className="eyebrow text-emerald">Nosotros</span>
+                <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                   Experiencia que genera confianza.
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
@@ -287,10 +307,8 @@ export function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
-                <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-                  Contacto
-                </span>
-                <h2 className="heading-lg mt-2 text-balance text-cream">
+                <span className="eyebrow text-gold">Contacto</span>
+                <h2 className="heading-lg mt-3 text-balance text-cream">
                   Hablemos de tu situación contable.
                 </h2>
                 <p className="mt-4 text-lg text-cream/80">
@@ -424,7 +442,7 @@ export function Index() {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-emerald text-primary-foreground hover:bg-emerald-dark"
+                    className="w-full bg-emerald font-heading text-primary-foreground hover:bg-emerald-dark"
                   >
                     Enviar consulta
                   </Button>
