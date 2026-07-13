@@ -163,10 +163,10 @@ function SobreNosotros() {
         <section className="bg-cream-deep/50 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-5">
             <div className="lg:col-span-2">
-              <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
+              <span className="eyebrow text-emerald">
                 Nuestra Historia
               </span>
-              <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+              <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                 Desde 1992 al servicio de nuestros clientes.
               </h2>
             </div>
