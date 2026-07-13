@@ -442,7 +442,7 @@ export function Index() {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-emerald text-primary-foreground hover:bg-emerald-dark"
+                    className="w-full bg-emerald font-heading text-primary-foreground hover:bg-emerald-dark"
                   >
                     Enviar consulta
                   </Button>
