@@ -277,10 +277,8 @@ export function Index() {
               </div>
 
               <div className="order-1 lg:order-2">
-                <span className="text-sm font-semibold uppercase tracking-wider text-emerald">
-                  Nosotros
-                </span>
-                <h2 className="heading-lg mt-2 text-balance text-emerald-dark">
+                <span className="eyebrow text-emerald">Nosotros</span>
+                <h2 className="heading-lg mt-3 text-balance text-emerald-dark">
                   Experiencia que genera confianza.
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
