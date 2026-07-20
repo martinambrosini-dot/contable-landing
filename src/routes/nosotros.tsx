@@ -124,13 +124,7 @@ function SobreNosotros() {
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-24 sm:px-6 lg:px-8">
           <Link to="/" className="flex min-w-0 shrink items-center" aria-label="Estudio Ambrosini - Inicio">
-            <img
-              src={logoAsset.url}
-              alt="Estudio Ambrosini. Contadores Públicos."
-              className="h-10 w-auto max-w-[220px] object-contain sm:h-12 sm:max-w-[280px] lg:h-14"
-              width={1000}
-              height={530}
-            />
+            <BrandLogo className="h-10 w-auto max-w-[220px] object-contain sm:h-12 sm:max-w-[280px] lg:h-14" />
           </Link>
           <Button asChild variant="ghost" className="text-emerald-dark hover:bg-emerald-dark/5">
             <Link to="/">
