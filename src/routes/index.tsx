@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-accounting.jpg";
-import logoAsset from "@/assets/ea-logo.png.asset.json";
+import { BrandLogo } from "@/components/brand-logo";
 
 export const Route = createFileRoute("/")({
   component: Index,
