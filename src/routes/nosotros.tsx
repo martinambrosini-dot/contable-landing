@@ -12,7 +12,7 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import logoAsset from "@/assets/ea-logo.png.asset.json";
+import { BrandLogo } from "@/components/brand-logo";
 
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
