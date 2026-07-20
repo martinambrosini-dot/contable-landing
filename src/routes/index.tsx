@@ -21,7 +21,71 @@ import { BrandLogo } from "@/components/brand-logo";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      {
+        title:
+          "Estudio Ambrosini — Contadores Públicos en Mendoza | Impuestos, Sueldos y Asesoramiento",
+      },
+      {
+        name: "description",
+        content:
+          "Estudio contable en Mendoza desde 1992. Impuestos, contabilidad, liquidación de sueldos, asesoramiento a pymes y juicios ARCA. Atención personalizada.",
+      },
+      {
+        name: "keywords",
+        content:
+          "contador Mendoza, estudio contable Mendoza, impuestos, monotributo, liquidación de sueldos, juicios ARCA, asesoramiento fiscal",
+      },
+      { property: "og:title", content: "Estudio Ambrosini — Contadores Públicos en Mendoza" },
+      {
+        property: "og:description",
+        content:
+          "Más de 30 años acompañando empresas, profesionales y familias de Mendoza. Impuestos, contabilidad, sueldos y asesoramiento integral.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:locale", content: "es_AR" },
+      { property: "og:site_name", content: "Estudio Ambrosini. Contadores Públicos." },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Estudio Ambrosini — Contadores Públicos en Mendoza",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Impuestos, contabilidad, sueldos y asesoramiento integral en Mendoza desde 1992.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AccountingService",
+          name: "Estudio Ambrosini. Contadores Públicos.",
+          description:
+            "Estudio contable en Mendoza especializado en impuestos, contabilidad, liquidación de sueldos, asesoramiento a pymes y juicios ARCA.",
+          foundingDate: "1992",
+          areaServed: { "@type": "AdministrativeArea", name: "Mendoza, Argentina" },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Rioja 791, 1º piso, Oficinas 2 y 3",
+            addressLocality: "Ciudad de Mendoza",
+            addressRegion: "Mendoza",
+            addressCountry: "AR",
+          },
+          telephone: "+54-261-429-5645",
+          email: "martin@estudioambrosini.net",
+          geo: { "@type": "GeoCoordinates", latitude: -32.894339, longitude: -68.8360198 },
+        }),
+      },
+    ],
+  }),
 });
+
 
 const navLinks = [
   { label: "Servicios", href: "/#servicios" },
