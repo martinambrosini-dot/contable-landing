@@ -13,6 +13,9 @@ import {
   Sparkles,
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
+import ogImageAsset from "@/assets/og-image.jpg.asset.json";
+
+const OG_IMAGE_URL = `https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app${ogImageAsset.url}`;
 
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
@@ -30,7 +33,21 @@ export const Route = createFileRoute("/nosotros")({
           "Más de 30 años acompañando empresas, profesionales y emprendedores en Mendoza con compromiso, ética y actualización permanente.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/nosotros" },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Estudio Ambrosini — Contadores Públicos en Mendoza" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sobre Nosotros — Estudio Ambrosini" },
+      {
+        name: "twitter:description",
+        content:
+          "Más de 30 años acompañando empresas, profesionales y emprendedores en Mendoza.",
+      },
+      { name: "twitter:image", content: OG_IMAGE_URL },
     ],
+    links: [{ rel: "canonical", href: "/nosotros" }],
   }),
   component: SobreNosotros,
 });
