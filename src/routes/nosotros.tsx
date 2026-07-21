@@ -14,8 +14,14 @@ import {
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
 import ogImageAsset from "@/assets/og-image.jpg.asset.json";
+import ogImage800Asset from "@/assets/og-image-800.jpg.asset.json";
+import ogImageSquareAsset from "@/assets/og-image-square.jpg.asset.json";
 
-const OG_IMAGE_URL = `https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app${ogImageAsset.url}`;
+const SITE_URL = "https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app";
+const OG_IMAGE_URL = `${SITE_URL}${ogImageAsset.url}`;
+const OG_IMAGE_800_URL = `${SITE_URL}${ogImage800Asset.url}`;
+const OG_IMAGE_SQUARE_URL = `${SITE_URL}${ogImageSquareAsset.url}`;
+const OG_IMAGE_ALT = "Estudio Ambrosini — Contadores Públicos en Mendoza";
 
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
