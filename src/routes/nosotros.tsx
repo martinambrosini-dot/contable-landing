@@ -14,8 +14,14 @@ import {
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
 import ogImageAsset from "@/assets/og-image.jpg.asset.json";
+import ogImage800Asset from "@/assets/og-image-800.jpg.asset.json";
+import ogImageSquareAsset from "@/assets/og-image-square.jpg.asset.json";
 
-const OG_IMAGE_URL = `https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app${ogImageAsset.url}`;
+const SITE_URL = "https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app";
+const OG_IMAGE_URL = `${SITE_URL}${ogImageAsset.url}`;
+const OG_IMAGE_800_URL = `${SITE_URL}${ogImage800Asset.url}`;
+const OG_IMAGE_SQUARE_URL = `${SITE_URL}${ogImageSquareAsset.url}`;
+const OG_IMAGE_ALT = "Estudio Ambrosini — Contadores Públicos en Mendoza";
 
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
@@ -35,9 +41,20 @@ export const Route = createFileRoute("/nosotros")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/nosotros" },
       { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Estudio Ambrosini — Contadores Públicos en Mendoza" },
+      { property: "og:image:alt", content: OG_IMAGE_ALT },
+      { property: "og:image", content: OG_IMAGE_800_URL },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "800" },
+      { property: "og:image:height", content: "418" },
+      { property: "og:image:alt", content: OG_IMAGE_ALT },
+      { property: "og:image", content: OG_IMAGE_SQUARE_URL },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "600" },
+      { property: "og:image:height", content: "600" },
+      { property: "og:image:alt", content: OG_IMAGE_ALT },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Sobre Nosotros — Estudio Ambrosini" },
       {
@@ -46,6 +63,7 @@ export const Route = createFileRoute("/nosotros")({
           "Más de 30 años acompañando empresas, profesionales y emprendedores en Mendoza.",
       },
       { name: "twitter:image", content: OG_IMAGE_URL },
+      { name: "twitter:image:alt", content: OG_IMAGE_ALT },
     ],
     links: [{ rel: "canonical", href: "/nosotros" }],
   }),
