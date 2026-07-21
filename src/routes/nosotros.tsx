@@ -13,6 +13,9 @@ import {
   Sparkles,
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
+import ogImageAsset from "@/assets/og-image.jpg.asset.json";
+
+const OG_IMAGE_URL = `https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app${ogImageAsset.url}`;
 
 export const Route = createFileRoute("/nosotros")({
   head: () => ({
