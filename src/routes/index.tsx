@@ -51,6 +51,10 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
       { property: "og:locale", content: "es_AR" },
       { property: "og:site_name", content: "Estudio Ambrosini. Contadores Públicos." },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Estudio Ambrosini — Contadores Públicos en Mendoza" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
@@ -61,6 +65,7 @@ export const Route = createFileRoute("/")({
         content:
           "Impuestos, contabilidad, sueldos y asesoramiento integral en Mendoza desde 1992.",
       },
+      { name: "twitter:image", content: OG_IMAGE_URL },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
