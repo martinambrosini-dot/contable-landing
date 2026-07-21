@@ -17,7 +17,11 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-accounting.jpg";
+import ogImageAsset from "@/assets/og-image.jpg.asset.json";
 import { BrandLogo } from "@/components/brand-logo";
+
+const SITE_URL = "https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app";
+const OG_IMAGE_URL = `${SITE_URL}${ogImageAsset.url}`;
 
 export const Route = createFileRoute("/")({
   component: Index,
