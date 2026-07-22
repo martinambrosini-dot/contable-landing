@@ -14,6 +14,7 @@ import {
   Menu,
   X,
   MessageCircle,
+  Share2,
 } from "lucide-react";
 import { useState } from "react";
 import heroImage from "@/assets/hero-accounting.jpg";
@@ -21,6 +22,7 @@ import ogImageAsset from "@/assets/og-image.jpg.asset.json";
 import ogImage800Asset from "@/assets/og-image-800.jpg.asset.json";
 import ogImageSquareAsset from "@/assets/og-image-square.jpg.asset.json";
 import { BrandLogo } from "@/components/brand-logo";
+import { ShareButtons } from "@/components/share-buttons";
 
 const SITE_URL = "https://id-preview--a728b6d1-fda0-467a-87d6-c9bef83d986a.lovable.app";
 const OG_IMAGE_URL = `${SITE_URL}${ogImageAsset.url}`;
