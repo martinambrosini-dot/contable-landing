@@ -11,8 +11,10 @@ import {
   Lock,
   ShieldCheck,
   Sparkles,
+  Share2,
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
+import { ShareButtons } from "@/components/share-buttons";
 import ogImageAsset from "@/assets/og-image.jpg.asset.json";
 import ogImage800Asset from "@/assets/og-image-800.jpg.asset.json";
 import ogImageSquareAsset from "@/assets/og-image-square.jpg.asset.json";
