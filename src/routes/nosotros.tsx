@@ -11,8 +11,10 @@ import {
   Lock,
   ShieldCheck,
   Sparkles,
+  Share2,
 } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
+import { ShareButtons } from "@/components/share-buttons";
 import ogImageAsset from "@/assets/og-image.jpg.asset.json";
 import ogImage800Asset from "@/assets/og-image-800.jpg.asset.json";
 import ogImageSquareAsset from "@/assets/og-image-square.jpg.asset.json";
@@ -377,6 +379,30 @@ function SobreNosotros() {
           </div>
         </section>
       </main>
+
+      {/* Compartir */}
+      <section className="border-y border-border bg-cream-deep/30 px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald/10 text-emerald">
+              <Share2 className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="font-heading text-base font-semibold text-emerald-dark">
+                ¿Te resultó útil? Compartí esta página
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Ayudá a otros a conocer el Estudio Ambrosini.
+              </p>
+            </div>
+          </div>
+          <ShareButtons
+            siteUrl={SITE_URL}
+            title="Sobre Nosotros — Estudio Ambrosini"
+            description="Más de 30 años acompañando empresas, profesionales y emprendedores en Mendoza."
+          />
+        </div>
+      </section>
 
       <footer className="border-t border-border bg-background px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
