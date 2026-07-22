@@ -1,5 +1,7 @@
 import { useRouter } from "@tanstack/react-router";
-import { Linkedin, MessageCircle, Twitter } from "lucide-react";
+import { Linkedin, MessageCircle, Twitter, Copy, Check } from "lucide-react";
+import { toast } from "sonner";
+import { useState } from "react";
 
 interface ShareButtonsProps {
   siteUrl: string;
@@ -9,6 +11,7 @@ interface ShareButtonsProps {
 
 export function ShareButtons({ siteUrl, title, description }: ShareButtonsProps) {
   const router = useRouter();
+  const [copied, setCopied] = useState(false);
   const pathname = router.state.location.pathname;
   const url = `${siteUrl}${pathname === "/" ? "/" : pathname}`;
   const encodedUrl = encodeURIComponent(url);
@@ -36,6 +39,21 @@ export function ShareButtons({ siteUrl, title, description }: ShareButtonsProps)
     },
   ];
 
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      toast.success("Link copiado al portapapeles", {
+        description: "Ya podés pegarlo donde quieras.",
+      });
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("No se pudo copiar el link", {
+        description: "Intentá copiar la URL manualmente.",
+      });
+    }
+  };
+
   return (
     <div className="flex items-center gap-3">
       {shareLinks.map((link) => (
@@ -50,6 +68,15 @@ export function ShareButtons({ siteUrl, title, description }: ShareButtonsProps)
           <link.icon className="h-5 w-5" />
         </a>
       ))}
+      <button
+        type="button"
+        onClick={handleCopy}
+        aria-label={copied ? "Link copiado" : "Copiar link de la página"}
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-emerald-dark transition-colors hover:bg-gold/20"
+      >
+        {copied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
+      </button>
     </div>
   );
 }
+
